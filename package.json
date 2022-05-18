@@ -1,0 +1,40 @@
+{
+  "name": "DogStore",
+  "version": "1.0.0",
+  "description": "Consumo de api Rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "tw:pro": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoterRamirez/DogStore.git"
+  },
+  "keywords": [
+    "Tailwind",
+    "CSS",
+    "HTML",
+    "Page",
+    "Demo"
+  ],
+  "author": "Soter Ramírez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SoterRamirez/DogStore/issues"
+  },
+  "homepage": "https://github.com/SoterRamirez/DogStore#readme",
+
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "tailwind-scrollbar-hide": "^1.1.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
+  }
+}
