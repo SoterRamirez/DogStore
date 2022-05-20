@@ -1,7 +1,7 @@
 <div align="center" id="top">
   <img src="https://soterramirez.dev/src/images/logo.png" alt="DogStore" />
 
-  &#xa0;
+&#xa0;
 
   <!-- <a href="https://dogstore.netlify.app">Demo</a> -->
 </div>
@@ -16,6 +16,8 @@
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/SoterRamirez/dogstore?color=56BEB8">
 
   <img alt="License" src="https://img.shields.io/github/license/SoterRamirez/dogstore?color=56BEB8">
+
+[![wakatime](https://wakatime.com/badge/user/1e159e54-fa93-4d34-b926-0fab10dcc0f3/project/c807a0ff-ec6a-4b6a-9d90-0d0c0bf5ab07.svg)](https://wakatime.com/badge/user/1e159e54-fa93-4d34-b926-0fab10dcc0f3/project/c807a0ff-ec6a-4b6a-9d90-0d0c0bf5ab07)
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/SoterRamirez/dogstore?color=56BEB8" /> -->
 
@@ -44,22 +46,23 @@
 
 <br>
 
-## :dart: About ##
+## :dart: About
 
 Consumo de API Rest de Perritos, aun en construcción
 
-## :sparkles: Features ##
+## :sparkles: Features
 
 :heavy_check_mark: Tailwind;\
 :heavy_check_mark: Responsive;\
 :heavy_check_mark: API REST;
 
-## :rocket: Images ##
+## :rocket: Images
+
 <p align="center">
   <img alt="Github top language" src="./Avances/screencapture-127-0-0-1-5500-public-index-html-2022-05-19-23_22_43.png">
 </p>
 
-## :rocket: Technologies ##
+## :rocket: Technologies
 
 The following tools were used in this project:
 
@@ -69,11 +72,11 @@ The following tools were used in this project:
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## :white_check_mark: Requirements ##
+## :white_check_mark: Requirements
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
-## :checkered_flag: Starting ##
+## :checkered_flag: Starting
 
 ```bash
 # Clone this project
@@ -91,10 +94,9 @@ $ yarn start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: License ##
+## :memo: License
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
 
 Made with :heart: by <a href="https://github.com/SoterRamirez" target="_blank">Isaí Ramírez</a>
 
