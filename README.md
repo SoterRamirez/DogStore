@@ -17,13 +17,13 @@
 
   <img alt="License" src="https://img.shields.io/github/license/SoterRamirez/dogstore?color=56BEB8">
 
-<a href="https://wakatime.com/badge/user/1e159e54-fa93-4d34-b926-0fab10dcc0f3/project/c807a0ff-ec6a-4b6a-9d90-0d0c0bf5ab07"><img src="https://wakatime.com/badge/user/1e159e54-fa93-4d34-b926-0fab10dcc0f3/project/c807a0ff-ec6a-4b6a-9d90-0d0c0bf5ab07.svg?color=56BEB8" alt="wakatime"></a>
+  <img alt="Wakatime" src="https://wakatime.com/badge/user/1e159e54-fa93-4d34-b926-0fab10dcc0f3/project/c807a0ff-ec6a-4b6a-9d90-0d0c0bf5ab07.svg?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/SoterRamirez/dogstore?color=56BEB8" /> -->
+  <img alt="Github issues" src="https://img.shields.io/github/issues/SoterRamirez/dogstore?color=56BEB8" />
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/SoterRamirez/dogstore?color=56BEB8" /> -->
+  <img alt="Github forks" src="https://img.shields.io/github/forks/SoterRamirez/dogstore?color=56BEB8" />
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/SoterRamirez/dogstore?color=56BEB8" /> -->
+  <img alt="Github stars" src="https://img.shields.io/github/stars/SoterRamirez/dogstore?color=56BEB8" />
 </p>
 
 <!-- Status -->
