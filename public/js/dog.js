@@ -1,6 +1,7 @@
 //The Dog API
 const API_URL_RANDOM = "https://api.thedogapi.com/v1/images/search?limit=4&api_key=ae4e08e8-4f4c-4f0b-8159-98b33b9d46f2";
 const API_URL_FAVORITE = "https://api.thedogapi.com/v1/favourites?api_key=ae4e08e8-4f4c-4f0b-8159-98b33b9d46f2";
+const API_URL_FAVORITE_DELETE = (id) => `https://api.thedogapi.com/v1/favourites/${id}?api_key=ae4e08e8-4f4c-4f0b-8159-98b33b9d46f2`;
 const spanError = document.getElementById("Error");
 //Load Random Dog Image
 async function loadRandomDog() {
@@ -43,8 +44,10 @@ async function loadFavoriteDog() {
     if (response.status !== 200) {
         spanError.innerHTML = "Error: " + response.status + " " + data.message;
     } else {
+        const article = document.getElementById("favoritesDogos")
+        article.innerHTML = "";
         data.forEach(dogo => {
-            const article = document.getElementById("favoritesDogos");
+            //Getting the image from the html file.
             const a = document.createElement("a");
             a.classList.add("block");
             const div = document.createElement("div");
@@ -57,7 +60,7 @@ async function loadFavoriteDog() {
             const h5 = document.createElement("h5");
             h5.classList.add("mt-4", "text-sm", "text-black/90", "text-center");
             const h5Text = document.createTextNode("Adoptado");
-
+            //Setting the source of the image to the url of the image.
             a.appendChild(div);
             div.appendChild(strong);
             strong.appendChild(strongText);
@@ -66,6 +69,7 @@ async function loadFavoriteDog() {
             h5.appendChild(h5Text);
             article.appendChild(a);
             img.src = dogo.image.url;
+            a.onclick = () => deleteFavoriteDog(dogo.id);
         });
     }
 }
@@ -85,9 +89,24 @@ async function saveFavoriteDog(id) {
     console.log(data);
     if (response.status !== 200) {
         spanError.innerHTML = "Error: " + response.status + " " + data.message;
+    }else{
+        console.log("Guardado");
+        loadFavoriteDog();
     }
 }
-
+//Delete Favorite Dog Image
+async function deleteFavoriteDog(id) {
+    const response = await fetch(API_URL_FAVORITE_DELETE(id), {
+        method: "DELETE",
+    });
+    const data = await response.json();
+    if (response.status !== 200) {
+        spanError.innerHTML = "Error: " + response.status + " " + data.message;
+    }else{
+        console.log("Eliminado");
+        loadFavoriteDog();
+    }
+}
 
 loadRandomDog();
 loadFavoriteDog();
