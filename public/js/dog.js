@@ -30,8 +30,27 @@ async function loadFavoriteDog() {
     const data = await response.json();
     console.log("Load Favorite Dog");
     console.log(data);
-    /* Getting the image from the html file. */
-
+    if (response.status !== 200) {
+        spanError.innerHTML = "Error: " + response.status + " " + data.message;
+    }
+}
+//Save Favorite Dog Image
+async function saveFavoriteDog() {
+    const response = await fetch(API_URL_FAVORITE, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            image_id: "https://images.dog.ceo/breeds/pug/n02110185_1096.jpg",
+        }),
+    });
+    const data = await response.json();
+    console.log("Save Favorite Dog");
+    console.log(data);
+    if (response.status !== 200) {
+        spanError.innerHTML = "Error: " + response.status + " " + data.message;
+    }
 }
 
 loadRandomDog();
