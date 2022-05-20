@@ -54,6 +54,11 @@ Consumo de API Rest de Perritos, aun en construcción
 :heavy_check_mark: Responsive;\
 :heavy_check_mark: API REST;
 
+## :rocket: Images ##
+<p align="center">
+  <img alt="Github top language" src="./Avances/screencapture-127-0-0-1-5500-public-index-html-2022-05-19-23_22_43.png">
+</p>
+
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
