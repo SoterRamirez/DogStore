@@ -1,7 +1,8 @@
 //The Dog API
 const API_URL_RANDOM = "https://api.thedogapi.com/v1/images/search?limit=4";
-const API_URL_FAVORITE = "https://api.thedogapi.com/v1/favourites?api_key=";
+const API_URL_FAVORITE = "https://api.thedogapi.com/v1/favourites";
 const API_URL_FAVORITE_DELETE = (id) => `https://api.thedogapi.com/v1/favourites/${id}?api_key=`;
+const API_URL_UPLOAD = "https://api.thedogapi.com/v1/images/upload";
 const spanError = document.getElementById("Error");
 //Load Random Dog Image
 async function loadRandomDog() {
@@ -114,6 +115,31 @@ async function deleteFavoriteDog(id) {
     }else{
         console.log("Eliminado");
         loadFavoriteDog();
+    }
+}
+//Upload Image Dog API
+async function uploadDogPhoto() {
+    const form = document.getElementById("uploadingForm")
+    const formData = new FormData(form)
+    console.log(formData.get("file"))
+    const response = await fetch(API_URL_UPLOAD, {
+        method: "POST",
+        headers: {
+            'X-API-KEY': 'ae4e08e8-4f4c-4f0b-8159-98b33b9d46f2',
+        },
+        body: formData,
+    })
+    const data = await response.json();
+    if (response.status !== 201) {
+        spanError.innerHTML = "Error: " + response.status + " " + data.message;
+        console.log('Error')
+        console.log({data})
+    }else {
+        console.log('Foto de Perrito subida')
+        console.log({ data })
+        console.log(data.url)
+        saveFavoriteDog(data.id)
+        console.log('Fin de la función')
     }
 }
 
