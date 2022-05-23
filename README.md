@@ -59,7 +59,8 @@ Consumo de API Rest de Perritos, aun en construcción
 ## :rocket: Images
 
 <p align="center">
-  <img alt="Github top language" src="./Avances/screencapture-127-0-0-1-5500-public-index-html-2022-05-19-23_22_43.png">
+  <img alt="Pagina Completa" src="./Avances/opc2.png">
+  <img alt="Upload dog" src="./Avances/opc3.png">
 </p>
 
 ## :rocket: Technologies
