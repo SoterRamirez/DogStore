@@ -3,7 +3,7 @@
 
 &#xa0;
 
-  <!-- <a href="https://dogstore.netlify.app">Demo</a> -->
+  <a href="https://doogstore.netlify.app">Demo</a>
 </div>
 
 <h1 align="center">DogStore</h1>
@@ -29,7 +29,7 @@
 <!-- Status -->
 
 <h4 align="center">
-	🚧  DogStore 🚀 Under construction...  🚧
+	🚧  DogStore 🚀 Finish  🚧
 </h4>
 
 <hr>
@@ -48,7 +48,7 @@
 
 ## :dart: About
 
-Consumo de API Rest de Perritos, aun en construcción
+Consumo de API Rest de Perritos, ver, guardar y subir fotos a la Api.
 
 ## :sparkles: Features
 
@@ -87,10 +87,13 @@ $ git clone https://github.com/SoterRamirez/dogstore
 $ cd dogstore
 
 # Install dependencies
-$ yarn
+$ npm install
 
 # Run the project
-$ yarn start
+$ npm run tw:build
+
+# Build Project
+$ npm run tw:pro
 
 # The server will initialize in the <http://localhost:3000>
 ```
